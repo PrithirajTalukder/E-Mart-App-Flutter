@@ -1,6 +1,8 @@
 import 'package:ecom_store/consts/consts.dart';
-import 'package:ecom_store/views/splach_screen/splash_screen.dart';
+import 'package:ecom_store/views/splash_screen/splash_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +14,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       title: 'Emart',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(

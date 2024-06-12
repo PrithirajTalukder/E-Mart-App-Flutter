@@ -1,22 +1,25 @@
 import 'package:ecom_store/consts/consts.dart';
 
-Widget customTextField(){
+Widget customTextField({
+  String? title, String? hint,controller}
+){
   
   return Column(
     crossAxisAlignment:CrossAxisAlignment.start,
     
     children: [
     
-    email.text.color(redColor).fontFamily(semibold).make(),
+    title!.text.color(redColor).fontFamily(semibold).make(),
     5.heightBox,
     TextFormField(
-      decoration: const InputDecoration(
+     
+      decoration: InputDecoration(
         hintStyle: TextStyle(
           fontFamily: semibold,
           color: textfieldGrey,
         ),
 
-        hintText: emailHint,
+        hintText: hint,
         isDense: true,
         fillColor: lightGrey,
         filled: true,
@@ -26,6 +29,7 @@ Widget customTextField(){
         )
       ),
 
-    )
+    ),
+    3.heightBox,
   ],);
 }

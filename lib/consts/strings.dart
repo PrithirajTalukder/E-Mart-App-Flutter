@@ -25,7 +25,7 @@ const home = "Home", categories = "Categories", cart = "Cart", account ="Account
 
 
 
-const search = "Search anything...", todayDeal = "Today's Deal", flash = "Flash Sale", sellers = "Top Sellers",
+const search = "Search anything...", todayDeal = "Today's Deal", brands = "Brands", flash = "Flash Sale", sellers = "Top Sellers",
 tcategories = "Top Categories", fcategories = "Featured Categories";
 
 

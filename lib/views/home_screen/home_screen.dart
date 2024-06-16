@@ -1,5 +1,6 @@
 import 'package:ecom_store/consts/consts.dart';
 import 'package:ecom_store/consts/lists.dart';
+import 'package:ecom_store/views/home_screen/components/featured_button.dart';
 import 'package:ecom_store/widgets_common/home_button.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -98,11 +99,27 @@ class HomeScreen extends StatelessWidget {
                 title: index == 0 ? tcategories : index == 1 ? brands : sellers,
               ))),
              
-              10.heightBox,
+              20.heightBox,
              
               Align(
                 alignment: Alignment.bottomLeft,
                 child: fcategories.text.color(whiteColor).fontFamily(semibold).size(18).make()),
+                20.heightBox,
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(children: 
+                    List.generate(3, (index) =>  Column(
+                      children: [
+                     
+                  
+                     featuredButton(),
+                     10.heightBox,
+                     featuredButton(),
+                        
+                      ],
+                    )).toList(),
+                  ),
+                ),
              ],),
            ),
          ),

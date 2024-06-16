@@ -26,7 +26,7 @@ const home = "Home", categories = "Categories", cart = "Cart", account ="Account
 
 
 const search = "Search anything...", todayDeal = "Today's Deal", brands = "Brands", flash = "Flash Sale", sellers = "Top Sellers",
-tcategories = "Top Categories", fcategories = "Featured Categories";
+tcategories = "Top Categories", fcategories = "Featured Categories", womensDress = "Womens Dress", girlsWatches = "Girls Watches", mobilePhone = "Mobile Phone", boysGlasses = "Boys Glasses", tshirts = "Tshirts", girlsDress = "Girls Dress";
 
 
 

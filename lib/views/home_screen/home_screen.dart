@@ -1,6 +1,8 @@
 import 'package:ecom_store/consts/consts.dart';
 import 'package:ecom_store/consts/lists.dart';
 import 'package:ecom_store/views/home_screen/components/featured_button.dart';
+import 'package:ecom_store/widgets_common/applogo_widget.dart';
+import 'package:ecom_store/widgets_common/bg_widget.dart';
 import 'package:ecom_store/widgets_common/home_button.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -112,16 +114,88 @@ class HomeScreen extends StatelessWidget {
                       children: [
                      
                   
-                     featuredButton(),
+                     featuredButton(icon: featuredImages1[index], title: featuredTitles1[index]),
                      10.heightBox,
-                     featuredButton(),
+                     featuredButton(icon: featuredImages2[index], title: featuredTitles2[index]),
                         
                       ],
                     )).toList(),
                   ),
                 ),
+
+                20.heightBox,
+                Container(
+                  
+                  width: double.infinity,
+                  padding: const EdgeInsets.all(12),
+                 
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                    featuredProduct.text.white.fontFamily(bold).size(18).make(),
+                    10.heightBox,
+                    SingleChildScrollView(
+                      scrollDirection: Axis.horizontal,
+                      child: Row(
+                      
+                        children: 
+                        List.generate(6, (index) =>  Column(
+                            crossAxisAlignment: CrossAxisAlignment.start, 
+                      
+                          children: [
+                            Image.asset(imgP1, width: 150, fit: BoxFit.cover),
+                            10.heightBox,
+                            "Laptop 4GB/64GB".text.fontFamily(semibold).color(darkFontGrey).make(),
+                            10.heightBox,
+                            "\$600".text.color(Vx.black).fontFamily(bold).size(16).make(),
+                      
+                          
+                          ],
+                        ).box.white.roundedSM.margin(const EdgeInsets.symmetric(horizontal: 4)).padding(const EdgeInsets.all(12)).make(),),
+                      ),
+                    ),
+                  ],),
+                ),
+
+                20.heightBox,
+                   VxSwiper.builder(
+                height: 150,
+              
+                enlargeCenterPage: true,
+               
+                itemCount: secondSliderList.length, itemBuilder: (context, index){
+                return  Image.asset(
+                    secondSliderList[index],
+                    fit: BoxFit.fitWidth,
+                    
+                  
+                ).box.rounded.make();
+             
+              }),
+
+              20.heightBox,
+              GridView.builder(
+                physics: const NeverScrollableScrollPhysics(),
+                shrinkWrap: true,
+                itemCount: 6, 
+                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2, mainAxisSpacing: 8, crossAxisSpacing: 8, mainAxisExtent: 300),  itemBuilder: (context,index){
+                return Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                   Image.asset(imgP6, width: 200, height: 200, fit: BoxFit.cover),
+                           Spacer(),
+                            "Lionel Messi Boot".text.fontFamily(semibold).color(darkFontGrey).make(),
+                            10.heightBox,
+                            "\$600".text.color(Vx.black).fontFamily(bold).size(16).make(),
+                  ],
+                  
+
+                ).box.white.roundedSM.margin(const EdgeInsets.symmetric(horizontal: 4)).padding(const EdgeInsets.all(10)).make();
+              })
              ],),
            ),
+
+           
          ),
 
         ],

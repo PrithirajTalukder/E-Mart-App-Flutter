@@ -30,3 +30,4 @@ tcategories = "Top Categories", fcategories = "Featured Categories", womensDress
 
 
 
+const featuredProduct = "Featured Products";

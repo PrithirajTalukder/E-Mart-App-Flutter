@@ -12,3 +12,28 @@ const featuredImages2 = [imgS4, imgS5, imgS6];
 
 const featuredTitles1 = [womensDress, girlsDress, girlsWatches];
 const featuredTitles2 = [boysGlasses, mobilePhone, tshirts];
+
+const featuredCat = [
+  womenCloth,
+  menCloth,
+  compAccess,
+  auto,
+  kids,
+  sports,
+ jwel,
+  cell,
+  fur,
+];
+
+const featuredCatImages =[
+  imgFc1,
+  imgFc2,
+  imgFc3,
+  imgFc4,
+  imgFc5,
+  imgFc6,
+  imgFc7,
+  imgFc8,
+  imgFc9,
+
+];

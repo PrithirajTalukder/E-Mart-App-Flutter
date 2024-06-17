@@ -1,12 +1,7 @@
 import 'package:ecom_store/consts/consts.dart';
 import 'package:ecom_store/consts/lists.dart';
 import 'package:ecom_store/views/home_screen/components/featured_button.dart';
-import 'package:ecom_store/widgets_common/applogo_widget.dart';
-import 'package:ecom_store/widgets_common/bg_widget.dart';
 import 'package:ecom_store/widgets_common/home_button.dart';
-import 'package:flutter/foundation.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -178,12 +173,12 @@ class HomeScreen extends StatelessWidget {
                 physics: const NeverScrollableScrollPhysics(),
                 shrinkWrap: true,
                 itemCount: 6, 
-                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2, mainAxisSpacing: 8, crossAxisSpacing: 8, mainAxisExtent: 300),  itemBuilder: (context,index){
+                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2, mainAxisSpacing: 8, crossAxisSpacing: 8, mainAxisExtent: 300),  itemBuilder: (context,index){
                 return Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                    Image.asset(imgP6, width: 200, height: 200, fit: BoxFit.cover),
-                           Spacer(),
+                           const Spacer(),
                             "Lionel Messi Boot".text.fontFamily(semibold).color(darkFontGrey).make(),
                             10.heightBox,
                             "\$600".text.color(Vx.black).fontFamily(bold).size(16).make(),

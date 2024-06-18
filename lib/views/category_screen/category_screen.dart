@@ -1,8 +1,10 @@
 import 'package:ecom_store/consts/consts.dart';
 import 'package:ecom_store/consts/lists.dart';
+import 'package:ecom_store/views/category_screen/category_details.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:get/get.dart';
 
 class CategoryScreen extends StatelessWidget {
   const CategoryScreen({super.key});
@@ -31,7 +33,9 @@ class CategoryScreen extends StatelessWidget {
                featuredCat[index]. text.fontFamily(semibold).color(darkFontGrey).align(TextAlign.center).make(),
 
               ],
-          ).box.white.rounded.outerShadowSm.clip(Clip.antiAlias).make();
+          ).box.white.rounded.outerShadowSm.clip(Clip.antiAlias).make().onTap(() {
+            Get.to(() => CategoryDetails(title: featuredCat[index]));
+          });
         }),
       ),
     );

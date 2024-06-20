@@ -1,7 +1,9 @@
+import 'package:ecom_store/views/category_screen/item_details.dart';
 import 'package:ecom_store/widgets_common/bg_widget.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:ecom_store/consts/consts.dart';
+import 'package:get/get.dart';
 
 class CategoryDetails extends StatelessWidget {
   final String? title;
@@ -53,7 +55,9 @@ class CategoryDetails extends StatelessWidget {
 
                  
               
-                ).box.white.roundedSM.padding(EdgeInsets.all(10)).outerShadowSm.margin(EdgeInsets.symmetric(horizontal: 6)).make();
+                ).box.white.roundedSM.padding(EdgeInsets.all(10)).outerShadowSm.margin(EdgeInsets.symmetric(horizontal: 6)).make(). onTap(() {
+                  Get.to(() => ItemDetails(title: "Dummy Title"));
+                });
               }))
 
 

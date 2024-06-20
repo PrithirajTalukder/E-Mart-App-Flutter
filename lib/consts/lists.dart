@@ -37,3 +37,5 @@ const featuredCatImages =[
   imgFc9,
 
 ];
+
+const itemDetailButtonsList = [video, rev, retpol, suppol, sellpol];

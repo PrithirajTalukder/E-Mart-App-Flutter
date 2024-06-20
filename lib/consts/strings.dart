@@ -33,3 +33,5 @@ tcategories = "Top Categories", fcategories = "Featured Categories", womensDress
 const featuredProduct = "Featured Products";
 
 const womenCloth = "Women Clothing", menCloth = "Men Clothing & Fashion", compAccess = "Computer & Accessories", auto = "Automobiles", kids = "Kids & Toys", sports = "Sports", jwel = "Jwellery", cell = "Cellphones and Tabs", fur = "Furnitures";
+
+const video = "Video", rev ="Reviews", sellpol = "Seller Policy", retpol = "Return Policy", suppol = "Support Policy", productsyou = " Products you may like";

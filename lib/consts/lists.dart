@@ -39,3 +39,7 @@ const featuredCatImages =[
 ];
 
 const itemDetailButtonsList = [video, rev, retpol, suppol, sellpol];
+
+const profileButtons = [orders, wishlist, messages];
+
+const profileButtonsIcons = [icOrder, icOrder, icMessages, ];
